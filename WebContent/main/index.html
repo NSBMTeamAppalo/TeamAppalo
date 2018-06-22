@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stock</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link href="main/css/style.css" rel="stylesheet"><script src="main/js/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
+    </div>
+
+
+        <div id="main-wrapper"><!-- header -->
+    <div class="header">
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <i class="cc BTC"></i>
+                    <span class="brand-title">
+                        Stock Simulation 
+                    </span>
+                </a>
+            </div>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-content">
+            <div class="header-left">
+                <ul>
+             
+                </ul>
+
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li class="icons">
+                        <a href="javascript:void(0)">
+                            <i class="icon-user f-s-18" aria-hidden="true"></i>
+                        </a>
+                        <div class="drop-down dropdown-profile animated bounceInDown">
+                            <div class="dropdown-content-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-power"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- #/ header -->
+
+
+    <!-- sidebar -->
+    <div class="nk-sidebar">
+        <div class="nk-nav-scroll">
+
+            <div class="nav-user">
+                  <h5>John Doe</h5>
+                <p>UI Developer</p>
+
+                <div class="nav-user-option">
+                </div>
+            </div>
+
+            <ul class="metismenu" id="menu">
+
+                <li class="nav-label">Main</li>
+                <li>
+                    <a class="" href="#" aria-expanded="false">
+                        <i class="icon-speedometer"></i>
+                        <span class="nav-text">Dashboard</span>
+                       
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- #/ nk nav scroll -->
+    </div>
+    <!-- #/ sidebar -->
+
+    <!-- content body -->
+    <div class="content-body">
+        <div class="container-fluid">
+            <div class="row page-titles">
+                <div class="col-md-3 col-sm-4 col-lg-3 col-xl-2 p-r-0 align-self-center">
+                    <h3 class="text-primary">Dashboard</h3>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                </div>
+                
+            </div>
+            <!-- row -->
+
+            <div class="row">
+                <div class="col-lg-4 no-card-border">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="pull-left card-title">Bank Balance</h4>
+                            <div class="dropdown custom-dropdown pull-right">
+                                <div data-toggle="dropdown">
+                                    <i class="ti-more-alt rotate-90 d-inline-block c-pointer"></i>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="m-t-15 text-center">
+                                <h2 class="f-s-50 text-primary">200000 </h2>
+                                <p class="f-s-14">LKR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 no-card-border">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="pull-left card-title">Stock Shares Values</h4>
+                            <div class="dropdown custom-dropdown pull-right">
+                                <div data-toggle="dropdown">
+                                    <i class="ti-more-alt rotate-90 d-inline-block c-pointer"></i>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="m-t-15 text-center">
+                                <h2 class="f-s-50 text-primary">145000 </h2>
+                                <p class="f-s-14">LKR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 no-card-border">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="pull-left card-title">Other Balance</h4>
+                            <div class="dropdown custom-dropdown pull-right">
+                                <div data-toggle="dropdown">
+                                    <i class="ti-more-alt rotate-90 d-inline-block c-pointer"></i>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="m-t-15 text-center">
+                                <h2 class="f-s-50 text-primary">200000 </h2>
+                                <p class="f-s-14">LKR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Live Stock prices</h4>
+                                <div class="trade-history-table">
+                                    <div class="table-responsive">
+                                        <table class="table table-xs">
+                                            <thead>
+                                                <tr>
+                                                    <th>Price($)</th>
+                                                    <th>Amount</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>11900.12</td>
+                                                    <td>
+                                                        <i class="cc BTC"></i> 0.215</td>
+                                                    <td>11:23:25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11903.18</td>
+                                                    <td>
+                                                        <i class="cc LTC"></i> 1.545</td>
+                                                    <td>11:23:05</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11899.56</td>
+                                                    <td>
+                                                        <i class="cc BTC"></i> 0.541</td>
+                                                    <td>11:22:50</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11910.52</td>
+                                                    <td>
+                                                        <i class="cc BTC"></i> 0.321</td>
+                                                    <td>11:22:15</td>
+                                                </tr>
+                                           
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Leader Board</h4>
+                            <div class="media border-bottom-1 p-t-15">
+                                <img src="assets/images/avatar/1.jpg" class="mr-3 rounded-circle">
+                                <div class="media-body">
+                                    <h5 class="m-b-0">John Tomas</h5>
+                                    <p>30000 points</p>
+                                </div>
+                            </div>
+                            <div class="media border-bottom-1 p-t-15">
+                                <img src="assets/images/avatar/2.jpg" class="mr-3 rounded-circle">
+                                <div class="media-body">
+                                    <h5 class="m-b-0">John Tomas</h5>
+                                    <p>20000 Points</p>
+                                </div>
+                            </div>
+                            <div class="media border-bottom-1 p-t-15">
+                                <img src="assets/images/avatar/3.jpg" class="mr-3 rounded-circle">
+                                <div class="media-body">
+                                    <h5 class="m-b-0">John Tomas</h5>
+                                    <p>10000 points</p>
+                                </div>
+                            </div>
+                            <div class="media border-bottom-1 p-t-15">
+                                <img src="assets/images/avatar/4.jpg" class="mr-3 rounded-circle">
+                                <div class="media-body">
+                                    <h5 class="m-b-0">John Tomas</h5>
+                                    <p>5000 Points</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-xl-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 aria-controls="collapseTwo2" aria-expanded="true" data-target="#collapseTwo2" data-toggle="collapse" class="mb-0">
+                                <i aria-hidden="true" class="fa"></i>
+                                Buy Shares
+                            </h4>
+                        </div>
+                        <div data-parent="#accordion-two" class="collapse show" id="collapseTwo2" style="">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-xl-12">
+                                        <div class="row my-2 p-r-15 p-l-15">
+                                            <div class="col-4">
+                                                <h5 class="text-bold-600 mb-0"></h5>
+                                            </div>
+                                            <div class="col-8 text-right">
+                                                <p class="text-muted mb-0"></p>
+                                            </div>
+                                        </div>
+                                        <form class="form form-horizontal">
+                                            <div class="form-body">
+                                                <div class="form-group row">
+                                                    <label class="col-md-4 col-form-label">Price</label>
+                                                    <div class="col-md-8">
+                                                      <select class="form-control">
+                                                          <option>company name</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-4 col-form-label" for="btc-market-sell-amount">Amount</label>
+                                                    <div class="col-md-8">
+                                                        <input type="number" id="btc-market-sell-amount" class="form-control" placeholder="0.026547 BTC" name="btc-market-sell-amount">
+                                                    </div>
+                                                </div>
+                                                <div class="form-actions pb-0">
+                                                    <button type="submit" class="btn round btn-success btn-block btn-glow"> Buy BTC </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xl-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 aria-controls="collapseTwo2" aria-expanded="true" data-target="#collapseTwo2" data-toggle="collapse" class="mb-0">
+                                <i aria-hidden="true" class="fa"></i>
+                                Sell Shares
+                            </h4>
+                        </div>
+                        <div data-parent="#accordion-two" class="collapse show" id="collapseTwo2" style="">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-xl-12">
+                                        <div class="row my-2 p-r-15 p-l-15">
+                                            <div class="col-4">
+                                                <h5 class="text-bold-600 mb-0"></h5>
+                                            </div>
+                                            <div class="col-8 text-right">
+                                                <p class="text-muted mb-0"></p>
+                                            </div>
+                                        </div>
+                                        <form class="form form-horizontal">
+                                            <div class="form-body">
+                                                <div class="form-group row">
+                                                    <label class="col-md-4 col-form-label">Price</label>
+                                                    <div class="col-md-8">
+                                                      <select class="form-control">
+                                                          <option>company name</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-md-4 col-form-label" for="btc-market-sell-amount">Amount</label>
+                                                    <div class="col-md-8">
+                                                        <input type="number" id="btc-market-sell-amount" class="form-control" placeholder="0.026547 BTC" name="btc-market-sell-amount">
+                                                    </div>
+                                                </div>
+                                                <div class="form-actions pb-0">
+                                                    <button type="submit" class="btn round btn-danger btn-block btn-glow"> Sell BTC </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Latest Update</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped verticle-middle">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">#ID</th>
+                                            <th class="text-right">Trade Time</th>
+                                            <th class="text-right">Amount</th>
+                                            <th class="text-right">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="text-right">
+                                                <span>$</span> 0.12</td>
+                                            <td class="text-right">
+                                                <span>$</span> 0.14</td>
+                                            <td class="text-right">
+                                                <span class="text-success">SELL</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td class="text-right">
+                                                <span>$</span> 0.17</td>
+                                            <td class="text-right">
+                                                <span>$</span> 0.14</td>
+                                            <td class="text-right">
+                                                <span class="text-danger">BUY</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #/ container -->
+    </div>
+    <!-- #/ content body -->
+
+    <!-- footer -->
+    <div class="footer">
+        
+    </div>
+    <!-- #/ footer --> </div>
+
+    <!-- Common JS -->
+    <script src="assets/plugins/common/common.min.js"></script><!-- Custom script --><script src="main/js/custom.min.js"></script>  
+
+    <script src="assets/plugins/chartjs/Chart.bundle.js"></script>
+    <script src="main/js/dashboard-7.js"></script>
+    
+</body>
+
+
+<!-- Mirrored from 9kit.net/demo/ico/dashboard/light/main/index7.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Jun 2018 15:38:45 GMT -->
+</html>
