@@ -2,426 +2,795 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stock</title>
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <!-- Custom Stylesheet -->
-    <link href="main/css/style.css" rel="stylesheet"><script src="main/js/modernizr-3.6.0.min.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock</title>
+<!-- Favicon icon -->
+<link rel="icon" type="image/png" sizes="16x16"
+	href="../assets/images/favicon.png">
+<!-- Custom Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+<script src="js/modernizr-3.6.0.min.js"></script>
 </head>
 
 <body>
 
-    <div id="preloader">
-        <div class="loader">
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__ball"></div>
-        </div>
-    </div>
+	<div id="preloader">
+		<div class="loader">
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__ball"></div>
+		</div>
+	</div>
 
 
-        <div id="main-wrapper"><!-- header -->
-    <div class="header">
-        <div class="nav-header">
-            <div class="brand-logo">
-                <a href="index.html">
-                    <i class="cc BTC"></i>
-                    <span class="brand-title">
-                        Stock Simulation 
-                    </span>
-                </a>
-            </div>
+	<div id="main-wrapper">
+		<!-- header -->
+		<div class="header">
+			<div class="nav-header">
+				<div class="brand-logo">
+					<a href="index.html"> <i class="cc BTC"></i> <span
+						class="brand-title"> Stock Simulation </span>
+					</a>
+				</div>
 
-            <div class="nav-control">
-                <div class="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-            </div>
-        </div>
+				<div class="nav-control">
+					<div class="hamburger">
+						<span class="line"></span> <span class="line"></span> <span
+							class="line"></span>
+					</div>
+				</div>
+			</div>
 
-        <div class="header-content">
-            <div class="header-left">
-                <ul>
-             
-                </ul>
+			<div class="header-content">
+				<div class="header-left">
+					<ul>
 
-            </div>
-            <div class="header-right">
-                <ul>
-                    <li class="icons">
-                        <a href="javascript:void(0)">
-                            <i class="icon-user f-s-18" aria-hidden="true"></i>
-                        </a>
-                        <div class="drop-down dropdown-profile animated bounceInDown">
-                            <div class="dropdown-content-body">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="icon-power"></i>
-                                            <span>Logout</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- #/ header -->
+					</ul>
+
+				</div>
+				<div class="header-right">
+					<ul>
+						<li class="icons"><a href="javascript:void(0)"> <i
+								class="icon-user f-s-18" aria-hidden="true"></i>
+						</a>
+							<div class="drop-down dropdown-profile animated bounceInDown">
+								<div class="dropdown-content-body">
+									<ul>
+										<li><a href="#"> <i class="icon-power"></i> <span>Logout</span>
+										</a></li>
+									</ul>
+								</div>
+							</div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- #/ header -->
 
 
-    <!-- sidebar -->
-    <div class="nk-sidebar">
-        <div class="nk-nav-scroll">
+		<!-- sidebar -->
+		<div class="nk-sidebar">
+			<div class="nk-nav-scroll">
 
-            <div class="nav-user">
-                  <h5>John Doe</h5>
-                <p>UI Developer</p>
+				<div class="nav-user">
+					<h5 id="user_name">John Doe</h5>
 
-                <div class="nav-user-option">
-                </div>
-            </div>
 
-            <ul class="metismenu" id="menu">
+					<div class="nav-user-option"></div>
+				</div>
 
-                <li class="nav-label">Main</li>
-                <li>
-                    <a class="" href="#" aria-expanded="false">
-                        <i class="icon-speedometer"></i>
-                        <span class="nav-text">Dashboard</span>
-                       
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- #/ nk nav scroll -->
-    </div>
-    <!-- #/ sidebar -->
+				<ul class="metismenu" id="menu">
 
-    <!-- content body -->
-    <div class="content-body">
-        <div class="container-fluid">
-            <div class="row page-titles">
-                <div class="col-md-3 col-sm-4 col-lg-3 col-xl-2 p-r-0 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="javascript:void(0)">Home</a>
-                        </li>
-                        <li class="breadcrumb-item active">Dashboard</li>
-                    </ol>
-                </div>
-                
-            </div>
-            <!-- row -->
+					<li class="nav-label">Main</li>
+					<li><a class="" href="#" aria-expanded="false"> <i
+							class="icon-speedometer"></i> <span class="nav-text">Dashboard</span>
 
-            <div class="row">
-                <div class="col-lg-4 no-card-border">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="pull-left card-title">Bank Balance</h4>
-                            <div class="dropdown custom-dropdown pull-right">
-                                <div data-toggle="dropdown">
-                                    <i class="ti-more-alt rotate-90 d-inline-block c-pointer"></i>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="m-t-15 text-center">
-                                <h2 class="f-s-50 text-primary">200000 </h2>
-                                <p class="f-s-14">LKR</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 no-card-border">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="pull-left card-title">Stock Shares Values</h4>
-                            <div class="dropdown custom-dropdown pull-right">
-                                <div data-toggle="dropdown">
-                                    <i class="ti-more-alt rotate-90 d-inline-block c-pointer"></i>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="m-t-15 text-center">
-                                <h2 class="f-s-50 text-primary">145000 </h2>
-                                <p class="f-s-14">LKR</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+					</a></li>
+				</ul>
+			</div>
+			<!-- #/ nk nav scroll -->
+		</div>
+		<!-- #/ sidebar -->
 
-                <div class="col-lg-4 no-card-border">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="pull-left card-title">Other Balance</h4>
-                            <div class="dropdown custom-dropdown pull-right">
-                                <div data-toggle="dropdown">
-                                    <i class="ti-more-alt rotate-90 d-inline-block c-pointer"></i>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="m-t-15 text-center">
-                                <h2 class="f-s-50 text-primary">200000 </h2>
-                                <p class="f-s-14">LKR</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
+		<!-- content body -->
+		<div class="content-body">
+			<div class="container-fluid">
+				<div class="row page-titles">
+					<div
+						class="col-md-3 col-sm-4 col-lg-3 col-xl-2 p-r-0 align-self-center">
+						<h3 class="text-primary">Dashboard</h3>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="javascript:void(0)">Home</a>
+							</li>
+							<li class="breadcrumb-item active">Dashboard</li>
+						</ol>
+					</div>
 
-            <div class="row">
-                <div class="col-lg-8">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Live Stock prices</h4>
-                                <div class="trade-history-table">
-                                    <div class="table-responsive">
-                                        <table class="table table-xs">
-                                            <thead>
-                                                <tr>
-                                                    <th>Price($)</th>
-                                                    <th>Amount</th>
-                                                    <th>Date</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>11900.12</td>
-                                                    <td>
-                                                        <i class="cc BTC"></i> 0.215</td>
-                                                    <td>11:23:25</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>11903.18</td>
-                                                    <td>
-                                                        <i class="cc LTC"></i> 1.545</td>
-                                                    <td>11:23:05</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>11899.56</td>
-                                                    <td>
-                                                        <i class="cc BTC"></i> 0.541</td>
-                                                    <td>11:22:50</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>11910.52</td>
-                                                    <td>
-                                                        <i class="cc BTC"></i> 0.321</td>
-                                                    <td>11:22:15</td>
-                                                </tr>
-                                           
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Leader Board</h4>
-                            <div class="media border-bottom-1 p-t-15">
-                                <img src="assets/images/avatar/1.jpg" class="mr-3 rounded-circle">
-                                <div class="media-body">
-                                    <h5 class="m-b-0">John Tomas</h5>
-                                    <p>30000 points</p>
-                                </div>
-                            </div>
-                            <div class="media border-bottom-1 p-t-15">
-                                <img src="assets/images/avatar/2.jpg" class="mr-3 rounded-circle">
-                                <div class="media-body">
-                                    <h5 class="m-b-0">John Tomas</h5>
-                                    <p>20000 Points</p>
-                                </div>
-                            </div>
-                            <div class="media border-bottom-1 p-t-15">
-                                <img src="assets/images/avatar/3.jpg" class="mr-3 rounded-circle">
-                                <div class="media-body">
-                                    <h5 class="m-b-0">John Tomas</h5>
-                                    <p>10000 points</p>
-                                </div>
-                            </div>
-                            <div class="media border-bottom-1 p-t-15">
-                                <img src="assets/images/avatar/4.jpg" class="mr-3 rounded-circle">
-                                <div class="media-body">
-                                    <h5 class="m-b-0">John Tomas</h5>
-                                    <p>5000 Points</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+				</div>
+				<!-- row -->
 
-            <div class="row">
-                <div class="col-lg-12 col-xl-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 aria-controls="collapseTwo2" aria-expanded="true" data-target="#collapseTwo2" data-toggle="collapse" class="mb-0">
-                                <i aria-hidden="true" class="fa"></i>
-                                Buy Shares
-                            </h4>
-                        </div>
-                        <div data-parent="#accordion-two" class="collapse show" id="collapseTwo2" style="">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 col-xl-12">
-                                        <div class="row my-2 p-r-15 p-l-15">
-                                            <div class="col-4">
-                                                <h5 class="text-bold-600 mb-0"></h5>
-                                            </div>
-                                            <div class="col-8 text-right">
-                                                <p class="text-muted mb-0"></p>
-                                            </div>
-                                        </div>
-                                        <form class="form form-horizontal">
-                                            <div class="form-body">
-                                                <div class="form-group row">
-                                                    <label class="col-md-4 col-form-label">Price</label>
-                                                    <div class="col-md-8">
-                                                      <select class="form-control">
-                                                          <option>company name</option>
-                                                      </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-md-4 col-form-label" for="btc-market-sell-amount">Amount</label>
-                                                    <div class="col-md-8">
-                                                        <input type="number" id="btc-market-sell-amount" class="form-control" placeholder="0.026547 BTC" name="btc-market-sell-amount">
-                                                    </div>
-                                                </div>
-                                                <div class="form-actions pb-0">
-                                                    <button type="submit" class="btn round btn-success btn-block btn-glow"> Buy BTC </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-xl-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 aria-controls="collapseTwo2" aria-expanded="true" data-target="#collapseTwo2" data-toggle="collapse" class="mb-0">
-                                <i aria-hidden="true" class="fa"></i>
-                                Sell Shares
-                            </h4>
-                        </div>
-                        <div data-parent="#accordion-two" class="collapse show" id="collapseTwo2" style="">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 col-xl-12">
-                                        <div class="row my-2 p-r-15 p-l-15">
-                                            <div class="col-4">
-                                                <h5 class="text-bold-600 mb-0"></h5>
-                                            </div>
-                                            <div class="col-8 text-right">
-                                                <p class="text-muted mb-0"></p>
-                                            </div>
-                                        </div>
-                                        <form class="form form-horizontal">
-                                            <div class="form-body">
-                                                <div class="form-group row">
-                                                    <label class="col-md-4 col-form-label">Price</label>
-                                                    <div class="col-md-8">
-                                                      <select class="form-control">
-                                                          <option>company name</option>
-                                                      </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label class="col-md-4 col-form-label" for="btc-market-sell-amount">Amount</label>
-                                                    <div class="col-md-8">
-                                                        <input type="number" id="btc-market-sell-amount" class="form-control" placeholder="0.026547 BTC" name="btc-market-sell-amount">
-                                                    </div>
-                                                </div>
-                                                <div class="form-actions pb-0">
-                                                    <button type="submit" class="btn round btn-danger btn-block btn-glow"> Sell BTC </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Latest Update</h4>
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-striped verticle-middle">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">#ID</th>
-                                            <th class="text-right">Trade Time</th>
-                                            <th class="text-right">Amount</th>
-                                            <th class="text-right">Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center">1</td>
-                                            <td class="text-right">
-                                                <span>$</span> 0.12</td>
-                                            <td class="text-right">
-                                                <span>$</span> 0.14</td>
-                                            <td class="text-right">
-                                                <span class="text-success">SELL</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">3</td>
-                                            <td class="text-right">
-                                                <span>$</span> 0.17</td>
-                                            <td class="text-right">
-                                                <span>$</span> 0.14</td>
-                                            <td class="text-right">
-                                                <span class="text-danger">BUY</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- #/ container -->
-    </div>
-    <!-- #/ content body -->
+				<div class="row">
+					<div class="col-lg-4 no-card-border">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="pull-left card-title">Bank Balance</h4>
+								<div class="dropdown custom-dropdown pull-right">
+									<div data-toggle="dropdown">
+										<i class="ti-more-alt rotate-90 d-inline-block c-pointer"></i>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="m-t-15 text-center">
+									<h2 class="f-s-50 text-primary" id="bank_balance"></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 no-card-border">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="pull-left card-title">Stock Shares Values</h4>
+								<div class="dropdown custom-dropdown pull-right">
+									<div data-toggle="dropdown">
+										<i class="ti-more-alt rotate-90 d-inline-block c-pointer"></i>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="m-t-15 text-center">
+									<h2 class="f-s-50 text-primary" id="stock_values"></h2>
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <!-- footer -->
-    <div class="footer">
-        
-    </div>
-    <!-- #/ footer --> </div>
+					<div class="col-lg-4 no-card-border">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="pull-left card-title">Current Round</h4>
+								<div class="dropdown custom-dropdown pull-right">
+									<div data-toggle="dropdown">
+										<i class="ti-more-alt rotate-90 d-inline-block c-pointer"></i>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="m-t-15 text-center">
+									<h2 class="f-s-50 text-primary" id="current_round"></h2>
 
-    <!-- Common JS -->
-    <script src="assets/plugins/common/common.min.js"></script><!-- Custom script --><script src="main/js/custom.min.js"></script>  
+								</div>
+							</div>
+						</div>
+					</div>
 
-    <script src="assets/plugins/chartjs/Chart.bundle.js"></script>
-    <script src="main/js/dashboard-7.js"></script>
-    
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-xl-12">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">Market History</h4>
+								<div id="chartdiv1" style="height: 500px; width:1000px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">Live Stock prices</h4>
+								<div class="trade-history-table">
+									<div class="table-responsive">
+										<table id="stocks" class="table table-xs">
+											<thead>
+												<tr>
+													<th>Company</th>
+													<th>Sector</th>
+													<th>Stock Price</th>
+
+												</tr>
+											</thead>
+											<tbody>
+
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">Leader Board</h4>
+								<div class="trade-history-table">
+								<div class="table-responsive">
+									<table id="player_list" class="table table-bordered table-striped verticle-middle">
+										<thead>
+											<tr>
+												<th class="text-center">Player</th>
+												<th class="text-right">Stock Value</th>
+												<th class="text-right">Account Balance</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+										</tbody>
+									</table>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 col-xl-6">
+						<div class="card">
+							<div class="card-header">
+								<h4 aria-controls="collapseTwo2" aria-expanded="true"
+									data-target="#collapseTwo2" data-toggle="collapse" class="mb-0">
+									<i aria-hidden="true" class="fa"></i> Buy Shares
+								</h4>
+							</div>
+							<div data-parent="#accordion-two" class="collapse show"
+								id="collapseTwo2" style="">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-12 col-xl-12">
+											<div class="row my-2 p-r-15 p-l-15">
+												<div class="col-4">
+													<h5 class="text-bold-600 mb-0"></h5>
+												</div>
+												<div class="col-8 text-right">
+													<p class="text-muted mb-0"></p>
+												</div>
+											</div>
+											<form class="form form-horizontal">
+												<div class="form-body">
+													<div class="form-group row">
+														<label class="col-md-4 col-form-label">Price</label>
+														<div class="col-md-8">
+															<select id="buy_company" class="form-control">
+																<option>company name</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label class="col-md-4 col-form-label"
+															for="btc-market-sell-amount">Amount</label>
+														<div class="col-md-8">
+															<input type="number" id="buy_amount" class="form-control"
+																 name="btc-market-sell-amount">
+														</div>
+													</div>
+													<div class="form-actions pb-0">
+														<button id="btn_buy" type="button"
+															class="btn round btn-success btn-block btn-glow">
+															Buy </button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 col-xl-6">
+						<div class="card">
+							<div class="card-header">
+								<h4 aria-controls="collapseTwo2" aria-expanded="true"
+									data-target="#collapseTwo2" data-toggle="collapse" class="mb-0">
+									<i aria-hidden="true" class="fa"></i> Sell Shares
+								</h4>
+							</div>
+							<div data-parent="#accordion-two" class="collapse show"
+								id="collapseTwo2" style="">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-12 col-xl-12">
+											<div class="row my-2 p-r-15 p-l-15">
+												<div class="col-4">
+													<h5 class="text-bold-600 mb-0"></h5>
+												</div>
+												<div class="col-8 text-right">
+													<p class="text-muted mb-0"></p>
+												</div>
+											</div>
+											<form class="form form-horizontal">
+												<div class="form-body">
+													<div class="form-group row">
+														<label class="col-md-4 col-form-label">Stock</label>
+														<div class="col-md-8">
+															<select id="sell_company" class="form-control">
+																<option>company name</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label class="col-md-4 col-form-label"
+															for="btc-market-sell-amount">Amount</label>
+														<div class="col-md-8">
+															<select id="sell_amount"
+																class="form-control"
+																name="btc-market-sell-amount"></select>
+														</div>
+													</div>
+													<div class="form-actions pb-0">
+														<button id="btn_sell" type="button"
+															class="btn round btn-danger btn-block btn-glow">
+															Sell</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">Market Analysis</h4>
+								<div class="table-responsive">
+									<table id="analysis"
+										class="table table-bordered table-striped verticle-middle">
+										<thead>
+											<tr>
+												<th class="text-center">Stock</th>
+												<th class="text-center">Recommendation</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="text-center">1</td>
+												<td class="text-center"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">My Shares</h4>
+								<div class="table-responsive">
+									<table id="my_shares" class="table table-bordered table-striped verticle-middle">
+										<thead>
+											<tr>
+												<th class="text-center">Company</th>
+												<th class="text-right">Share Count</th>
+												<th class="text-right">Share Value</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">Bank Transactions</h4>
+								<div class="table-responsive">
+									<table id="bank_transactions"
+										class="table table-bordered table-striped verticle-middle">
+										<thead>
+											<tr>
+												<th class="text-center">Transaction At</th>
+												<th class="text-right">Transaction Amount</th>
+												<th class="text-right">Transaction Type</th>
+												<th class="text-right">Balance After</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">Stock Transactions</h4>
+								<div class="table-responsive">
+									<table id="stock_transactions"
+										class="table table-bordered table-striped verticle-middle">
+										<thead>
+											<tr>
+												<th class="text-center">Transaction At</th>
+												<th class="text-center">Stock</th>
+												<th class="text-center">Stock Amount</th>
+												<th class="text-right">Transaction Amount</th>
+												<th class="text-center">Transaction Type</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- #/ container -->
+		</div>
+		<!-- #/ content body -->
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="copyright">
+				<p>TeamApolllo &copy; 2018</p>
+			</div>
+		</div>
+		<!-- #/ footer -->
+	</div>
+
+	<!-- Common JS -->
+	<script src="../assets/plugins/common/common.min.js"></script>
+	<!-- Custom script -->
+	<script src="js/custom.min.js"></script>
+
+	<!-- Morris Chart -->
+	<script src="../assets/plugins/morris/raphael-min.js"></script>
+	<script src="../assets/plugins/morris/morris.js"></script>
+	<!-- Custom dashboard script -->
+	<script src="js/dashboard-2.js"></script>
+	<script type="text/javascript">
+    $(function(){
+    	var host_name=window.location.host;
+    	var player_name=sessionStorage.getItem("player");
+    	$("#user_name").text(player_name);
+    	$.ajax({
+            url: "http://"+host_name+"/AppolloStockMarket/rest/appollo-market/current-round",
+            type: 'GET',
+            success: function (res) {
+            	
+              $("#current_round").text(res);
+            },
+        });
+    	$.ajax({
+            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/bank-account/"+player_name,
+            type: 'GET',
+            success: function (res) {
+               $("#bank_balance").text(res.accountBalance);
+            },
+        });
+    	$.ajax({
+            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/player/"+player_name,
+            type: 'GET',
+            success: function (res) {
+               $("#stock_values").text(res.stock_value);
+            },
+        });
+		$.ajax({
+            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker",
+            type: 'GET',
+            success: function (res) {
+            	$("#stocks > tbody").empty();
+            	$("#buy_company").empty();
+               $.each(res,function(key,company){
+            	   $("#stocks > tbody:last-child").append('<tr><td>'+company.company_Name+'</td><td>'+company.company_Sector+'</td><td>'+company.share_Vlaue+'</td></tr>');
+            	   $("#buy_company").append('<option value="'+company.company_Name+'">'+company.company_Name+'</option>');
+            	});
+            },
+        });
+		
+		$.ajax({
+            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/players",
+            type: 'GET',
+            success: function (res) {
+            	$("#player_list > tbody").empty();
+               $.each(res,function(key,player){
+            	   $.ajax({
+                       url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/bank-account/"+player.player_name,
+                       type: 'GET',
+                       success: function (res) {
+                          $("#player_list > tbody:last-child").append('<tr><td>'+player.player_name+'</td><td>'+player.stock_value+'</td><td>'+res.accountBalance+'</td></tr>');
+                       },
+                   });
+            	   });
+            },
+        });
+		
+		$.ajax({
+            url: "http://"+host_name+"/AppolloStockMarket/rest/market-analyst/recommendations",
+            type: 'GET',
+            success: function (res) {
+            	
+            	$("#analysis > tbody").empty();
+               $.each(res,function(key,recom){
+            	   $("#analysis > tbody:last-child").append('<tr><td class="text-center">'+recom.company_name+'</td><td class="text-center">'+ recom.recommend +'</td></tr>');
+               });
+            },
+        });
+		
+		
+		
+		$.ajax({
+            url: "http://"+host_name+"/AppolloStockMarket/rest/appollo-market/player-stocks/"+player_name,
+            type: 'GET',
+            success: function (res) {
+            	
+            	$("#my_shares >tbody").empty();
+            	$("#sell_company").empty();
+            	$("#sell_company").append('<option></option>');
+               $.each(res,function(key,stock){
+            	   $("#sell_company").append('<option value="'+stock.company+'">'+stock.company+'</option>');
+            	   $("#my_shares > tbody:last-child").append('<tr><td>'+stock.company+'</td><td>'+stock.stock_Count+'</td><td>'+stock.stock_Value+'</td></tr>');
+                   
+               });
+            },
+        });
+		$.ajax({
+            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/account-transactions/"+player_name,
+            type: 'GET',
+            success: function (res) {
+            	$("#bank_transactions >tbody").empty();
+            	
+               $.each(res,function(key,transaction){
+            	   $("#bank_transactions > tbody:last-child").append('<tr><td>'+transaction.time+'</td><td>'+transaction.transaction_amount+'</td><td>'+transaction.transaction_type+'</td><td>'+transaction.balance_after+'</td></tr>');
+               });
+            },
+        });
+		
+		$.ajax({
+            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/stock-transactions/"+player_name,
+            type: 'GET',
+            success: function (res) {
+            	$("#stock_transactions >tbody").empty();
+               $.each(res,function(key,transaction){
+            	   $("#stock_transactions > tbody:last-child").append('<tr><td>'+transaction.trans_time+'</td><td>'+transaction.company+'</td><td>'+transaction.share_amount+'</td><td>'+transaction.transaction_amount+'</td><td>'+transaction.transaction_type+'</td></tr>');
+               });
+            },
+        });
+		
+		$("#btn_buy").click(function(){
+    		if($("#buy_amount").val()>0){
+    			$.ajax({
+                    url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/buy/"+player_name+'/'+$( "#buy_company :selected" ).val()+'/'+$("#buy_amount").val(),
+                    type: 'GET',
+                    success: function (res) {
+                    	$("#buy_amount").val('');
+                    	if(res!=true){
+                     	   alert("Action could not performed")
+                        }
+                    	$.ajax({
+            	            url: "http://"+host_name+"/AppolloStockMarket/rest/appollo-market/player-stocks/"+player_name,
+            	            type: 'GET',
+            	            success: function (res) {
+            	            	$("#my_shares >tbody").empty();
+            	            	$("#sell_company").empty();
+            	            	$("#sell_company").append('<option></option>');
+            	               $.each(res,function(key,stock){
+            	            	   if(stock.stock_Count>0){
+            	            		   $("#sell_company").append('<option value="'+stock.company+'">'+stock.company+'</option>');
+            		            	   $("#my_shares > tbody:last-child").append('<tr><td>'+stock.company+'</td><td>'+stock.stock_Count+'</td><td>'+stock.stock_Value+'</td></tr>');
+            	            	   }
+            	               });
+            	            },
+            	        });
+                    },
+                });
+    		}else{
+    			alert("Please enter a number greater than 0");
+    		}
+    		
+    	});
+		$("#btn_sell").click(function(){
+			if($("#sell_amount").val()>0){
+    		$.ajax({
+                url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/sell/"+player_name+'/'+$("#sell_company :selected" ).val()+'/'+$("#sell_amount :selected").val(),
+                type: 'GET',
+                success: function (res) {
+                   if(res!=true){
+                	   alert("Action could not performed")
+                   }
+                },
+            });
+			}else{
+    			alert("Please enter a number greater than 0");
+    		}
+    	});
+		
+		$("#sell_company").change(function(){
+			if($("#sell_company :selected").val()!=null){
+			$.ajax({
+					url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/stock-count/"+$("#sell_company :selected").val()+"/"+player_name,
+		            type: 'GET',
+		            success: function (res) {
+		            	console.log(res);
+		            	$("#sell_amount").empty();
+		               for(i=1;i<=res;i++){
+		            	   $("#sell_amount").append('<option value="'+i+'">'+i+'</option>');
+		            	}
+		            },
+	        });
+			}else{
+				alert("Please Select an Stock to sell.")
+			}
+		});
+		
+		setInterval(function(){
+			$.ajax({
+	            url: "http://"+host_name+"/AppolloStockMarket/rest/appollo-market/current-round",
+	            type: 'GET',
+	            success: function (res) {
+	            	
+	              $("#current_round").text(res);
+	            },
+	        });
+	    	$.ajax({
+	            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/bank-account/"+player_name,
+	            type: 'GET',
+	            success: function (res) {
+	               $("#bank_balance").text(res.accountBalance);
+	            },
+	        });
+	    	$.ajax({
+	            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/player/"+player_name,
+	            type: 'GET',
+	            success: function (res) {
+	               $("#stock_values").text(res.stock_value);
+	            },
+	        });
+			$.ajax({
+	            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker",
+	            type: 'GET',
+	            success: function (res) {
+	            	$("#stocks > tbody").empty();
+	            	$("#buy_company").empty();
+	               $.each(res,function(key,company){
+	            	   $("#stocks > tbody:last-child").append('<tr><td>'+company.company_Name+'</td><td>'+company.company_Sector+'</td><td>'+company.share_Vlaue+'</td></tr>');
+	            	   $("#buy_company").append('<option value="'+company.company_Name+'">'+company.company_Name+'</option>');
+	            	});
+	            },
+	        });
+			
+			$.ajax({
+	            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/players",
+	            type: 'GET',
+	            success: function (res) {
+	            	$("#player_list > tbody").empty();
+	               $.each(res,function(key,player){
+	            	   $.ajax({
+	                       url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/bank-account/"+player.player_name,
+	                       type: 'GET',
+	                       success: function (res) {
+	                          $("#player_list > tbody:last-child").append('<tr><td>'+player.player_name+'</td><td>'+player.stock_value+'</td><td>'+res.accountBalance+'</td></tr>');
+	                       },
+	                   });
+	            	   });
+	            },
+	        });
+			
+			$.ajax({
+	            url: "http://"+host_name+"/AppolloStockMarket/rest/market-analyst/recommendations",
+	            type: 'GET',
+	            success: function (res) {
+	            	
+	            	$("#analysis > tbody").empty();
+	               $.each(res,function(key,recom){
+	            	   $("#analysis > tbody:last-child").append('<tr><td class="text-center">'+recom.company_name+'</td><td class="text-center">'+ recom.recommend +'</td></tr>');
+	               });
+	            },
+	        });
+			
+			$.ajax({
+	            url: "http://"+host_name+"/AppolloStockMarket/rest/appollo-market/player-stocks/"+player_name,
+	            type: 'GET',
+	            success: function (res) {
+	            	
+	            	$("#my_shares >tbody").empty();
+	               $.each(res,function(key,stock){
+	            	   if(stock.stock_Count>0){
+	            		   $("#my_shares > tbody:last-child").append('<tr><td>'+stock.company+'</td><td>'+stock.stock_Count+'</td><td>'+stock.stock_Value+'</td></tr>');
+		                   
+	            	   }
+	               });
+	            },
+	        });
+			$.ajax({
+	            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/account-transactions/"+player_name,
+	            type: 'GET',
+	            success: function (res) {
+	            	$("#bank_transactions >tbody").empty();
+	            	
+	               $.each(res,function(key,transaction){
+	            	   $("#bank_transactions > tbody:last-child").append('<tr><td>'+transaction.time+'</td><td>'+transaction.transaction_amount+'</td><td>'+transaction.transaction_type+'</td><td>'+transaction.balance_after+'</td></tr>');
+	               });
+	            },
+	        });
+			
+			$.ajax({
+	            url: "http://"+host_name+"/AppolloStockMarket/rest/stock-broker/stock-transactions/"+player_name,
+	            type: 'GET',
+	            success: function (res) {
+	            	$("#stock_transactions >tbody").empty();
+	               $.each(res,function(key,transaction){
+	            	   $("#stock_transactions > tbody:last-child").append('<tr><td>'+transaction.trans_time+'</td><td>'+transaction.company+'</td><td>'+transaction.share_amount+'</td><td>'+transaction.transaction_amount+'</td><td>'+transaction.transaction_type+'</td></tr>');
+	               });
+	            },
+	        });
+		},5000);
+    });
+    </script>
+	<!--Load the AJAX API-->
+	<script type="text/javascript"
+		src="https://www.gstatic.com/charts/loader.js"></script>
+	
+	<script type="text/javascript">
+	$(function(){
+		setInterval(function(){
+			var host_name=window.location.host;
+		     google.charts.load('current', {'packages':['line']});
+		     google.charts.setOnLoadCallback(drawChart);
+
+		      var companies;var round;var rows=[];
+		      function drawChart() {
+		    	  $.ajax({
+		    	        url: "http://"+host_name+"/AppolloStockMarket/rest/appollo-market/stock-predictions",
+		    	        type: 'GET',
+		    	        success: function (res) {
+		    	           companies=res;
+		    	           round=$("#current_round").text();
+		    	           var data = new google.visualization.DataTable();
+		    	           data.addColumn('number', 'Round');
+		    	           
+		    	           $.each(companies,function(key,company){
+		    	        	   data.addColumn('number', company.company_name);
+		    	           });
+		    	         for(i=0;i<round;i++){
+		    		        	   var array=[i+1];
+		    		        	   $.each(companies,function(key,company){
+		    			        	   array.push(company.round_values[i]);
+		    			           });
+		    		        	   rows.push(array);
+		    		           }
+		    	        	 data.addRows(rows);
+		    	        	 var options = {
+		    	             chart: {
+		    	            	 title: 'Company Performance',
+		    	                 curveType: 'function',
+		    	                 legend: { position: 'bottom' }
+		    	             },
+		    	             width: 900,
+		    	             height: 500
+		    	           };
+		    	           var chart = new google.charts.Line(document.getElementById('chartdiv1'));
+		      	           chart.draw(data, google.charts.Line.convertOptions(options));
+		    	        },
+		    	  });
+		      }
+		},5000);
+	});
+     
+    </script>
 </body>
 
 

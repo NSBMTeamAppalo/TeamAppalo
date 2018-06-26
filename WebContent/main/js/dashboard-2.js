@@ -3,7 +3,7 @@ $(function () {
     "use strict";
 
     // Morris Area chart
-    Morris.Area({
+   /*  Morris.Area({
         element: 'morris-area-chart1',
         data: [{
                 period: '2012',
@@ -98,7 +98,7 @@ $(function () {
         resize: true
 
     });
-
+ */
     // Morris Area chart
 
     Morris.Area({
